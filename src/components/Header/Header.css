@@ -2,10 +2,11 @@
     height: 150px;
     text-align: center;
     background-color: teal;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .header h1{
     padding-top: 20px;
     color: #fefefe;
-    font-weight: 600;
+    font-weight: 500;
 }

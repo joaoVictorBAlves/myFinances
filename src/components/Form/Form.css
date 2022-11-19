@@ -1,0 +1,53 @@
+form{
+    max-width: 1120px;
+    margin: 20px auto;
+    width: 98%;
+    background-color: #FEFEFE;
+    box-shadow: 0px 0px 5px #CCC;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+    gap: 10px;
+}
+
+.content-input{
+    display: flex;
+    flex-direction: column; 
+}
+
+.content-input input{
+   outline: none;
+   border-radius: 6px;
+   padding: 5px 10px;
+   font-size: 15px;
+   border: 1px solid #CCC;
+}
+
+.radio-group{
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input{
+    margin-left: 20px;
+    accent-color: black;
+    margin-top: 0;
+}
+
+button{
+    margin: 0;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: teal;
+}
+
+@media (max-width: 750px) {
+    form{
+        display: grid;
+        width: 90%;
+    }
+}

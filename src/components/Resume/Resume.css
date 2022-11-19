@@ -10,6 +10,7 @@
 
 @media (max-width: 750px) {
     .resume{
+        width: 90%;
         gap: 10px;
     }
 }
