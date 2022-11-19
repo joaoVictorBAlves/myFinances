@@ -1,0 +1,54 @@
+.resume-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FEFEFE;
+    border-radius: 6px;
+    padding: 5px 15px;
+    width: 30%;
+}
+
+.resume-item .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom:20px;
+    width: 100%;
+    gap: 10px;
+}
+
+/* icons */
+svg {
+    width: 25px;
+    height: 25px;
+}
+
+/* title */
+p {
+    font-size: 20px;
+}
+
+/* total */
+span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .resume-item {
+        width: 25%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+    svg {
+        display: none;
+    }
+}
