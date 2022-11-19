@@ -1,12 +1,12 @@
 .header{
     height: 150px;
     text-align: center;
-    background-color: teal;
+    background-image: linear-gradient(to bottom,#FCBB13, #FFD404);
     border-radius: 0px 0px 10px 10px;
 }
 
 .header h1{
     padding-top: 20px;
-    color: #fefefe;
-    font-weight: 500;
+    color: #080808;
+    font-weight: 600;
 }

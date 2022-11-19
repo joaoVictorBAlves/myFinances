@@ -41,8 +41,8 @@ form{
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    color: white;
-    background-color: teal;
+    color: #080808;
+    background-image: linear-gradient(to bottom,#FCBB13, #FFD404);
 }
 
 @media (max-width: 750px) {
