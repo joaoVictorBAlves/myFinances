@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Form from './components/Form';
+import Grid from './components/Grid';
 import Header from './components/Header';
 import Resume from './components/Resume';
 
@@ -43,7 +44,7 @@ const App = () => {
     <>
       <Header />
       <Resume income={income} expense={expense} total={total} />
-      <Form handleAdd={handleAdd} />
+      <Form handleAdd={handleAdd} transacionsList={transacionsList} setTransalcionsList={setTransalcionsList} />
     </>
   );
 }
