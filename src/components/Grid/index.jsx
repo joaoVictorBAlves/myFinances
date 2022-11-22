@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import GridItem from '../GridItem';
 import './Grid.css'
 
 const Grid = ({ items, setItems }) => {
+
     const onDelete = (ID) => {
         const newArray = items.filter((transaction) => transaction.id !== ID);
         setItems(newArray);
-        localStorage.setItem("transactions", JSON.stringify(newArray));
-    }
+        localStorage.setItem("transaction", JSON.stringify(newArray));
+    };
 
     return (
         <table>
@@ -19,10 +21,9 @@ const Grid = ({ items, setItems }) => {
                 </tr>
             </thead>
             <tbody>
-                {items?.map((item, index) => {
-                    console.log(item)
-                    // <GridItem key={index} item={item} onDelete={onDelete} />
-                })}
+                {items?.map((item, index) => (
+                    <GridItem key={index} item={item} onDelete={onDelete} />
+                ))}
             </tbody>
         </table>
     );

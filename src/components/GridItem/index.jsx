@@ -7,11 +7,11 @@ import {
 
 const GridItem = ({ item, onDelete }) => {
     return (
-        <tr>
+        <tr className='grid-item'>
             <td>{item.desc}</td>
             <td>{item.amount}</td>
             <td className='center'>
-                {item.expense ? (
+                {item.isExpensive ? (
                     <FaRegArrowAltCircleDown color='red' />
                 ) : (
                     <FaRegArrowAltCircleUp color='green' />

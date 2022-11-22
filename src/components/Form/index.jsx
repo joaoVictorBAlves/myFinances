@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Grid from '../Grid';
 import './Form.css'
 
-const Form = ({ handleAdd, transactionList, setTransactionList }) => {
+const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
     const [desc, setDesc] = useState("")
     const [amount, setAmount] = useState("")
     const [isExpensive, setExpensive] = useState(false)
@@ -54,7 +54,7 @@ const Form = ({ handleAdd, transactionList, setTransactionList }) => {
                 </div>
                 <input className='button' type="button" value="SEND" onClick={handleSave} />
             </form>
-            <Grid items={transactionList} setItems={setTransactionList} />
+            <Grid items={transactionsList} setItems={setTransactionsList} />
         </>
     );
 }

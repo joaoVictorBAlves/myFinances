@@ -1,4 +1,4 @@
-td{
+.grid-item td{
     padding-top: 15px;
     word-break: break-all;
     text-align: start;
@@ -8,7 +8,11 @@ td{
     text-align: center;
 }
 
-svg{
+.start{
+    text-align: start;
+}
+
+.grid-item svg{
     width: 18px;
     height: 18px;
 }

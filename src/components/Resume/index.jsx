@@ -6,7 +6,7 @@ import {
     FaDollarSign
 } from 'react-icons/fa';
 
-const Resume = ({income, expense, total}) => {
+const Resume = ({ income, expense, total }) => {
     return (
         <div className="resume">
             <ResumeItem title="Additions" testValue={income} Icon={FaRegArrowAltCircleUp} />
