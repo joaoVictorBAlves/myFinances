@@ -48,9 +48,9 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
 
                 <div className="radio-group">
                     <input type="radio" name="group1" id="add" defaultChecked onChange={() => setExpensive(!isExpensive)} />
-                    Addition
+                    Income
                     <input type="radio" name="group1" id="sub" onChange={() => setExpensive(!isExpensive)} />
-                    Subtraction
+                    Expense
                 </div>
                 <input className='button' type="button" value="SEND" onClick={handleSave} />
             </form>

@@ -16,7 +16,7 @@ const App = () => {
 
   const handleAdd = (transaction) => {
     const newTransactionList = [...transactionsList, transaction];
-    setTransalcionsList(newTransactionList);
+    setTransactionsList(newTransactionList);
     localStorage.setItem("transaction", JSON.stringify(newTransactionList));
   }
 
